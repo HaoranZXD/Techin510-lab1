@@ -7,7 +7,7 @@ st.set_page_config(
     initial_sidebar_state="auto",
 ) 
 
-col1, col2 = st.columns([0.5, 0.5])
+col1, col2 = st.columns([0.4, 0.6])
 with col1:
     st.markdown(
         """
@@ -31,45 +31,90 @@ with col2:
         """
     # Haoran Zeng (He/Him)
                 
-    Student at [GIX](https://gix.uw.edu/)
+    ### Email: [haoranz@uw.edu](haoranz@uw.edu)
     """
     )
 
 st.markdown(
     """
-# Projects
-
-- [Project 1](https://www.google.com)
-- [Project 2](https://www.google.com)
-- [Project 3](https://www.google.com)
+# Education
+### University of Washington
+Master of Science in Technology Innovation
+### Tsinghua University
+Master of Arts in Design Studies
+### Tongji University
+Bachelor of Engineering in Industrial Design
 """
+
+
 )
 
 st.markdown(
     """
-# Contact
-""")
+# Professional Experience
+### Zilliz
+- Role: Design Intern
+- Key Projects and Accomplishments: Branding Overhaul
+### Unilumin LED
+- Role: Project Manager Trainee
+- Key Projects and Accomplishments: LED Display Project Leadership
+
+"""
+
+
+)
+
+st.markdown(
+    """
+# Hobbies and Interests
+"""
+
+)
+
 col1, col2, col3 = st.columns(3)
-
-# Card with image and text
-for col in [col1, col2, col3]:
-    col.markdown(
+with col1:
+    st.markdown(
         """
-        <style>
-        .profile-img img {
-            width: 100%;
-            border-radius: 10%;
-        }
-        </style>
-
-        <div class="profile-img">
-
-        ![](https://avatars.githubusercontent.com/u/148395441?s=400&u=61ba9a316cf6f4c37bf88522b51aa3d79e34ad45&v=4)
-        </div>
-        """,
-        unsafe_allow_html=True,
+    ### 🎵Music
+    """
+    )
+with col2:
+    st.markdown(
+        """
+    ### 🎞️Movies
+    """
+    )
+with col3:
+    st.markdown(
+        """
+    ### 👟Sports
+    """
     )
 
+
+st.markdown(
+    """
+# Projects
+### Future Mobility System Design Sponsored by Aston Martin
+- Explored potential technological advancements and societal values shaping future mobility, envisioning a 2050 
+urban transport system rewarding environmental contributors. In this concept, Aston Martin evolves from a car 
+manufacturer to an exclusive service provider, leveraging the Eco-coin system and superconducting magnetic 
+levitation technology.
+
+### Packaging Upcycling Sponsored by LVMH
+- Investigated the fusion of bio-based materials with used packaging. Conceived an installation using repurposed 
+paper boxes, a set of 3D-printed molds, and a unique production process inspired by Dior's flower embroidery 
+dresses. This design was chosen from 54 projects for exhibition at The Bund Finance Center by LVMH.
+
+### Beijing Changping Urban Renewal New Scene Design
+- Revitalized street vitality through art curation, organized street art events, and designed a series of public art 
+installations. Received top honors and was invited for further design development and execution. The project is 
+currently in the implementation phase.
+"""
+
+)
+
+
 col1, col2, col3 = st.columns(3)
 
 # Card with image and text
@@ -79,7 +124,7 @@ for col in [col1, col2, col3]:
         <style>
         .profile-img img {
             width: 100%;
-            border-radius: 10%;
+            border-radius: 50%;
         }
         </style>
 
